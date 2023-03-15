@@ -1,0 +1,40 @@
+.Homepage {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 100px;
+  /* margin testing */
+}
+.btn-scrl p {
+  cursor: pointer;
+  text-decoration: underline;
+  transition: 0.09s ease;
+}
+.btn-scrl p:hover {
+  color: tomato;
+  transition: 0.09s ease;
+}
+
+header {
+  width: 85vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+header h1 {
+  font-size: 4em;
+  max-width: 680px;
+}
+header p {
+  font-size: 1.5em;
+}
+
+section h1 {
+  margin-bottom: 15px;
+}
+.products {
+  display: flex;
+  width: 85vw;
+  justify-content: space-between;
+}

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+.Productcard {
+  height: 230px;
+  width: 260px;
+  background-color: white;
+  box-shadow: 0px 22px 74px -27px rgba(0, 0, 0, 0.32);
+  border-radius: 12px;
+  padding: 10px;
+}
+.img-cont {
+  background-color: lightgray;
+  width: 100%;
+  height: 75%;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+.id-cont {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.id-cont p.plusbutton {
+  display: block;
+  border-radius: 12px;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  font-size: 2.2em;
+  cursor: pointer;
+  font-weight: 200;
+  transition: 0.09s;
+}
+.id-cont p.plusbutton:hover {
+  background-color: #f3f3f3;
+  transition: 0.09s;
+}
+
+.price { font-weight: var(--semi); }
+.prodname { font-weight: var(--reg); }

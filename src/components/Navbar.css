@@ -1,3 +1,29 @@
 .navbar {
-  font-weight: var();
+  justify-self: flex-start;
+  font-weight: var(--reg);
+  width: 85vw;
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
+  background-color: white;
+}
+ul li {
+  list-style: none;
+}
+ul {
+  justify-self: flex-start;
+  width: 450px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2em;
+  height: 80px;
+  padding: 0 10px;
+  display: inline-flex;
+  align-items: center;
 }
