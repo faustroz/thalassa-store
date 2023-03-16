@@ -7,7 +7,7 @@ export const PRODUCTS = [
     {
         id: 2,
         productName: "Nasi Ikan + Sambal",
-        harga: 0,
+        harga: 10000,
     },
     {
         id: 3,
@@ -17,6 +17,6 @@ export const PRODUCTS = [
     {
         id: 4,
         productName: "Nasi Ikan",
-        harga: 1000,
+        harga: 10000,
     },
 ]

@@ -2,12 +2,13 @@ import './Homepage.css';
 import { useRef } from 'react';
 import Navbar from '../components/Navbar';
 import Shop from './shop/shop';
+import Category from '../components/Category';
+import Cart  from './cart/cart.jsx';
 
 
 const Homepage = () => {
   
   const linkRef = useRef(null);
-
   const goto = (ref) => {
     window.scrollTo({
       top: ref.offsetTop,
@@ -26,8 +27,8 @@ const Homepage = () => {
             <p>Start shopping ↓</p>
           </div>
         </header>
-
         <section ref={linkRef}>
+          <Category />
           <h1>Main Course</h1>
           <Shop/>
         </section>

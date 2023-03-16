@@ -12,13 +12,13 @@ export const Product = (props) => {
 
     return (
     <div className='Productcard'>
-      <div className="img-cont">{}</div>
+      <div className="img-cont"></div>
       <div className="id-cont">
         <div className="texts-cont">
           <p className="prodname">{productName}</p>
           <p className="price">{rupiahBaru}</p> 
         </div>
-        <p className='plusbutton' onClick={() => addToCart(id)}>+ {cartItemAmount > 0 && <p> ({cartItemAmount}) </p>}</p>
+        <p className='plusbutton' onClick={() => addToCart(id)}>+ {cartItemAmount > 0}</p>
       </div>
     </div>
     )
