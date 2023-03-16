@@ -37,4 +37,5 @@ section h1 {
   display: flex;
   width: 85vw;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
