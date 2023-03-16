@@ -1,9 +1,11 @@
 import './Homepage.css';
 import { useRef } from 'react';
 import Navbar from '../components/Navbar';
-import Productcard from '../components/Productcard';
+import Shop from './shop/shop';
+
 
 const Homepage = () => {
+  
   const linkRef = useRef(null);
 
   const goto = (ref) => {
@@ -12,10 +14,6 @@ const Homepage = () => {
       left: 0,
       behavior: 'smooth'
     });
-  }
-
-  const prodName = (prodName) => {
-    return prodName
   }
 
   return (
@@ -31,12 +29,7 @@ const Homepage = () => {
 
         <section ref={linkRef}>
           <h1>Main Course</h1>
-          <div className="products">
-            <Productcard name={prodName('Nasi Ayam + Sambel')}/>
-            <Productcard name={prodName('Nasi Ikan + Sambel')}/>
-            <Productcard name={prodName('Nasi Ayam')}/>
-            <Productcard name={prodName('Nasi Ikan')}/>
-          </div>
+          <Shop/>
         </section>
       </div>
     </div>

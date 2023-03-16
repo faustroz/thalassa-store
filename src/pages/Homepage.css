@@ -5,11 +5,13 @@
   margin-bottom: 100px;
   /* margin testing */
 }
+
 .btn-scrl p {
   cursor: pointer;
   text-decoration: underline;
   transition: 0.09s ease;
 }
+
 .btn-scrl p:hover {
   color: tomato;
   transition: 0.09s ease;
@@ -22,10 +24,12 @@ header {
   justify-content: center;
   flex-direction: column;
 }
+
 header h1 {
   font-size: 4em;
   max-width: 680px;
 }
+
 header p {
   font-size: 1.5em;
 }

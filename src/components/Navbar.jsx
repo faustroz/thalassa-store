@@ -1,13 +1,15 @@
 import './Navbar.css';
-
+import { useNavigate } from 'react-router-dom';
 const Navbar = () => {
+  const navigasi = useNavigate()
   return (
     <div className='navbar'>
       <ul>
-        <li><a href="#">Order</a></li>
-        <li><a href="#">Tutorials</a></li>
-        <li><a href="#">Terms</a></li>
-        <li><a href="#">About Us</a></li>
+        <li><a onClick={() => navigasi('/order')}>Order</a></li>
+        <li><a onClick={() => navigasi('/tutorials')}>Tutorials</a></li>
+        <li><a onClick={() => navigasi('/terms')}>Terms</a></li>
+        <li><a onClick={() => navigasi('/about')}>About Us</a></li>
+        <li><a onClick={() => navigasi('/cart')}>Cart</a></li>
       </ul>
     </div>
   )
