@@ -61,6 +61,7 @@ button.product-count {
     font-size: 1.1em;
     color: white;
     background-color: black;
+    cursor: pointer;
     /* border: 1px solid black; */
 }
 .product-name {
