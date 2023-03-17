@@ -21,9 +21,10 @@ const Cart = (props) => {
                         return <CartItem data={product}/>
                     }
                 })}
-            </div>
-            <div className="checkout">
                 <p>Total: {totalAmount}</p>
+            </div>
+            
+            <div className="checkout">
                 <button>Order Now</button>
                 <button onClick={() => props.setTrigger(false)}>Back Shopping</button>
                 { props.children }
