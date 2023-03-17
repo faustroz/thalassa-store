@@ -36,6 +36,11 @@
     border-radius: 8px;
     margin: 10px;
     cursor: pointer;
+    transition: 0.09s ease;
+}
+.checkout button:hover {
+    background-color: rgb(243, 243, 243);
+    transition: 0.09s ease;
 }
 
 
