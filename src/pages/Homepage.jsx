@@ -1,6 +1,5 @@
 import './Homepage.css';
 import { useRef } from 'react';
-import Navbar from '../components/Navbar';
 import Shop from './shop/shop';
 import Category from '../components/Category';
 import Cart  from './cart/cart.jsx';
@@ -19,7 +18,6 @@ const Homepage = () => {
 
   return (
     <div className='Homepage'>
-      <Navbar />
       <div className="container">
         <header>
           <h1>Welcome to <br/> Thalassa Store. Starving? we got you.</h1>
@@ -28,8 +26,7 @@ const Homepage = () => {
           </div>
         </header>
         <section ref={linkRef}>
-          <Category />
-          <h1>Main Course</h1>
+          <h1>Products</h1>
           <Shop/>
         </section>
       </div>

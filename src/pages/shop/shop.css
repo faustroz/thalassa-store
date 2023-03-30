@@ -1,5 +1,6 @@
 .products {
-    display: flex;
     width: 85vw;
-    justify-content: space-between;
+    display: grid;
+    grid-auto-rows: minmax(1fr, auto);
+    gap: 24px;
 }

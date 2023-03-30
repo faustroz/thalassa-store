@@ -22,12 +22,14 @@ const Cart = (props) => {
                     }
                 })}
                 <p>Total: {totalAmount}</p>
+                <input className="user-data" type="text" placeholder='NIS'/>
+                <input className="user-data" type="text" placeholder='2 Words of your name'/>
             </div>
             
             <div className="checkout">
-                <button>Order Now</button>
                 <button onClick={() => props.setTrigger(false)}>Back Shopping</button>
                 { props.children }
+                <button>Checkout</button> { /* add routing */ }
             </div>
         </div>
     ) : "";
