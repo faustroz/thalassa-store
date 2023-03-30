@@ -6,14 +6,14 @@ import './cart.css'
 
 const convertRupiah = require('rupiah-format')
 
-const Cart = (props) => {
+const Cart = () => {
     const { cartItems, getTotalCartAmount } = useContext(ShopContext)
     const totalAmount = convertRupiah.convert(getTotalCartAmount())
 
-    return (props.trigger) ? (
+    return (
         <div className="cart">
             <div>
-                <h1>Shop List</h1>
+                <h1>Daftar Belanja</h1>
             </div>
             <div className="cartItems">
                 {PRODUCTS.map((product) => {
@@ -21,18 +21,17 @@ const Cart = (props) => {
                         return <CartItem data={product}/>
                     }
                 })}
-                <p>Total: {totalAmount}</p>
+
+
+                <p className="totalAmount">Total: {totalAmount}</p>
                 <input className="user-data" type="text" placeholder='NIS'/>
-                <input className="user-data" type="text" placeholder='2 Words of your name'/>
+                <input className="user-data" type="text" placeholder='2 kata dari nama'/>
             </div>
-            
             <div className="checkout">
-                <button onClick={() => props.setTrigger(false)}>Back Shopping</button>
-                { props.children }
                 <button>Checkout</button> { /* add routing */ }
             </div>
         </div>
-    ) : "";
+    );
 }
 
 export default Cart;

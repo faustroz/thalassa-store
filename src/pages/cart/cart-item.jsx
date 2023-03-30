@@ -10,15 +10,15 @@ export const CartItem = (props) => {
     
     return (
         <div className="cartItem">
-            <div className="">
-                <p className='product-name'><b>{productName}</b></p>
-                <p>{rupiahBaru}</p>
+            <div className=''>
+                <p className='product-name'>{productName}</p>
+                <p><b>{rupiahBaru}</b></p>
             </div>
-                <div className="countHandler">
-                    <input value={cartItems[id]} onChange={(e) => updateCartItemCount(Number(e.target.value), id)} className='product-count'/>
-                    <button onClick={() => removeCart(id)} className='product-count'>-</button>
-                    <button onClick={() => addToCart(id)} className='product-count'>+</button>
-                </div>
+            <div className="countHandler">
+                <input value={cartItems[id]} onChange={(e) => updateCartItemCount(Number(e.target.value), id)} className='product-count'/>
+                <button onClick={() => removeCart(id)} className='product-count'>-</button>
+                <button onClick={() => addToCart(id)} className='product-count'>+</button>
+            </div>
         </div>
     )
 }
