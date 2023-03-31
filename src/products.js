@@ -7,16 +7,16 @@ export const PRODUCTS = [
     {
         id: 2,
         productName: "Kolak Pisang",
-        harga: 10000,
+        harga: 5000,
     },
     {
         id: 3,
         productName: "Kuud Ental",
-        harga: 10000,
+        harga: 7000,
     },
     {
         id: 4,
         productName: "Es Daluman",
-        harga: 5000,
+        harga: 7000,
     },
 ]
