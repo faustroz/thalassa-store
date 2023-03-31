@@ -48,3 +48,9 @@
 .prodname {
     font-weight: var(--reg);
 }
+
+@media screen and (max-width:428px) {
+    .Productcard {
+        width: 85vw;
+    }
+}

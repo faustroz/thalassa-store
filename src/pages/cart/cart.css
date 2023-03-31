@@ -87,3 +87,18 @@ input.user-data {
     padding: 10px 20px;
     margin: 10px 0;
 }
+
+@media screen and (max-width:428px) {
+    .cartItem {
+        width: 85vw;
+    }
+    .cartItems {
+        width: 85vw;
+    }
+    input.product-count {
+        width: 18vw;
+    }
+    .countHandler {
+        width: 42vw;
+    }
+}
