@@ -5,7 +5,6 @@ import { CartItem } from "./cart-item"
 import './cart.css'
 
 const convertRupiah = require('rupiah-format')
-
 const Cart = () => {
     const { cartItems, getTotalCartAmount } = useContext(ShopContext)
     const totalAmount = convertRupiah.convert(getTotalCartAmount())
@@ -24,13 +23,14 @@ const Cart = () => {
 
 
                 <p className="totalAmount">Total: {totalAmount}</p>
-                <input className="user-data" type="text" placeholder='NIS'/>
+                <input className="user-data" type="tel" placeholder='No. Handphone' />
                 <input className="user-data" type="text" placeholder='2 kata dari nama'/>
             </div>
             <div className="checkout">
-                <button>Checkout</button> { /* add routing */ }
+               <button><a href="https://wa.me/+6287855130964?text=Halo%2C%20saya%20ingin%20memesan%20produk%20nomor%201">Pesan Sekarang!</a></button> { /* add routing */ }
             </div>
         </div>
+        
     );
 }
 

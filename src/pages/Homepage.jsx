@@ -19,13 +19,13 @@ const Homepage = () => {
     <div className='Homepage'>
       <div className="container">
         <header>
-          <h1>Selamat datang di<br/>Kedai Djadoel. Lapar? kami atasi</h1>
+          <h1>Selamat datang di<br/>Kedai Djadoel. Lapar? Kami atasi</h1>
           <div className="btn-scrl" onClick={() => goto(linkRef.current)}>
             <p>Mulai belanja ↓</p>
           </div>
         </header>
         <section ref={linkRef}>
-          <h1>Makanan kami</h1>
+          <h1>Menu </h1>
           <Shop/>
           <Cart />
         </section>

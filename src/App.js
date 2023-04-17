@@ -9,7 +9,6 @@ const App = () => {
           <Router>
             <Routes>
               <Route path='/' element={<Homepage />}/>
-              <Route path='/order' element={<Homepage />}/>
             </Routes>
           </Router>
       </ShopContextProvider>

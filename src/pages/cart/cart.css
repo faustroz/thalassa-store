@@ -6,6 +6,7 @@
     background-color: white;
     margin-top: 170px;
 }
+
 .cartItem {
     width: 550px;
     margin-bottom: 20px;
@@ -13,14 +14,17 @@
     justify-content: space-between;
     gap: 20px;
 }
+
 .cartItems {
     width: 550px;
 }
+
 .countHandler input {
     width: 40px;
     text-align: center;
     font-weight: bolder;
 }
+
 .totalAmount {
     margin-top: 50px;
 }
@@ -44,10 +48,22 @@
         0px 32.8px 33.8px rgba(0, 0, 0, 0.089),
         0px 71px 73px rgba(0, 0, 0, 0.12);
 }
+
 .checkout button:hover {
     background-color: rgb(255, 255, 255);
     transition: 0.09s ease;
     color: black;
+}
+
+.checkout a {
+    height: 40px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.checkout a:hover {
+    height: 40px;
+    color: rgb(0, 0, 0)
 }
 
 
@@ -56,6 +72,7 @@
     display: flex;
     justify-content: space-between;
 }
+
 input.product-count {
     height: 40px;
     border-radius: 10px;
@@ -64,6 +81,7 @@ input.product-count {
     text-align: left;
     padding: 10px 20px;
 }
+
 button.product-count {
     height: 40px;
     width: 40px;
@@ -74,6 +92,7 @@ button.product-count {
     background-color: black;
     cursor: pointer;
 }
+
 .product-name {
     max-width: 200px;
 }
@@ -92,12 +111,15 @@ input.user-data {
     .cartItem {
         width: 85vw;
     }
+
     .cartItems {
         width: 85vw;
     }
+
     input.product-count {
         width: 18vw;
     }
+
     .countHandler {
         width: 42vw;
     }
