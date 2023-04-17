@@ -21,10 +21,8 @@ const Cart = () => {
                     }
                 })}
 
-
+                
                 <p className="totalAmount">Total: {totalAmount}</p>
-                <input className="user-data" type="tel" placeholder='No. Handphone' />
-                <input className="user-data" type="text" placeholder='2 kata dari nama'/>
             </div>
             <div className="checkout">
                <button><a href="https://wa.me/+6287855130964?text=Halo%2C%20saya%20ingin%20memesan%20produk%20nomor%201">Pesan Sekarang!</a></button> { /* add routing */ }
