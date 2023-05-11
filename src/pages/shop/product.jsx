@@ -5,14 +5,14 @@ const convertRupiah = require('rupiah-format')
 
 export const Product = (props) => {
 
-    const {id, productName, harga} = props.data;
+    const {id, productName, harga, productImage} = props.data;
     const { addToCart, cartItems } = useContext(ShopContext)
     let rupiahBaru = convertRupiah.convert(harga)
     const cartItemAmount = cartItems[id]
 
     return (
     <div className='Productcard'>
-      <div className="img-cont"></div>
+      <img src={productImage} alt={productName} className='img-cont' />
       <div className="id-cont">
         <div className="texts-cont">
           <p className="prodname">{productName}</p>
