@@ -2,6 +2,7 @@ import './Homepage.css';
 import { useRef } from 'react';
 import Shop from './shop/shop';
 import Cart  from './cart/cart.jsx';
+import logo from '../img/logo.png'
 
 
 const Homepage = () => {
@@ -19,11 +20,15 @@ const Homepage = () => {
     <div className='Homepage'>
       <div className="container">
         <header>
-          <h1>Selamat datang di<br/>Kedai Djadoel. Lapar? Kami atasi</h1>
+          <nav>
+            <img src={logo} alt="logo" className='logo' />
+          </nav>
+          <h1>Selamat datang di<br/>Kedai Bali Djadoel. Kami atasi laparmu</h1>
           <div className="btn-scrl" onClick={() => goto(linkRef.current)}>
             <p>Mulai belanja ↓</p>
           </div>
         </header>
+        <hr />
         <section ref={linkRef}>
           <h1>Menu </h1>
           <Shop/>

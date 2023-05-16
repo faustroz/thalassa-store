@@ -52,6 +52,10 @@
 
 @media screen and (max-width:428px) {
     .Productcard {
-        width: 85vw;
+        width: 40vw;
+        height: 260px;
+    }
+    .prodname, .price {
+        font-size: 12px;
     }
 }
