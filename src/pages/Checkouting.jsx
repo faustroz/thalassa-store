@@ -7,8 +7,9 @@ import { CartItem } from "./cart/cart-item-2"
 const convertRupiah = require('rupiah-format')
 
 const Checkouting = () => {
-  const { cartItems, getTotalCartAmount } = useContext(ShopContext)
-  const totalAmount = convertRupiah.convert(getTotalCartAmount())
+  const { cartItems, getTotalCartAmount } = useContext(ShopContext) /** cartItems untuk mendapatkan data item apa saja yang ada di keranjang */
+  const totalAmount = convertRupiah.convert(getTotalCartAmount()) /** totalAmount adalah hasil harga yang sudah di convert ke rupiah */
+
   
   return (
     <div className="Checkouting">
@@ -25,7 +26,7 @@ const Checkouting = () => {
                 <p>INGAT SCREENSHOT PESANAN SEBELUM CHECKOUT!</p>
             </div>
       <h1>{getTotalCartAmount}</h1>
-      <button className="checkout">checkout</button>
+      <button>CHECKOUT</button>
     </div>
   )
 }
