@@ -22,6 +22,7 @@ const Checkouting = () => {
                     }
                 })}
                 <p className="totalAmount">Total: {totalAmount}</p>
+                <p>INGAT SCREENSHOT PESANAN SEBELUM CHECKOUT!</p>
             </div>
       <h1>{getTotalCartAmount}</h1>
       <button className="checkout">checkout</button>
