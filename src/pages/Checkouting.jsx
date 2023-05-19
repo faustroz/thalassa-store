@@ -1,14 +1,28 @@
 import { ShopContext } from "../context/shop-context"
 import { useContext } from "react"
 import './Checkouting.css'
+import { PRODUCTS } from "../products"
+import { CartItem } from "./cart/cart-item"
+
+const convertRupiah = require('rupiah-format')
 
 const Checkouting = () => {
-  const { getTotalCartAmount } = useContext(ShopContext)
-
+  const { cartItems, getTotalCartAmount } = useContext(ShopContext)
+  const totalAmount = convertRupiah.convert(getTotalCartAmount())
+  
   return (
     <div className="Checkouting">
-      <h1>hai</h1> 
-      {/* disini taruh list barang yang sudah dipesen, baru ke whatsapp kata dewa i */}
+       <div>
+                <h1>Daftar Belanja</h1>
+            </div>
+            <div className="cartItems">
+                {PRODUCTS.map((product) => {
+                    if (cartItems[product.id] !== 0) {
+                        return <CartItem data={product}/>
+                    }
+                })}
+                <p className="totalAmount">Total: {totalAmount}</p>
+            </div>
       <h1>{getTotalCartAmount}</h1>
       <button className="checkout">checkout</button>
     </div>
