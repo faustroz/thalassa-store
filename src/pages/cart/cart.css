@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     background-color: white;
-    margin-top: 170px;
+    margin-top: 100px;
 }
 
 .cartItem {
@@ -17,6 +17,14 @@
 
 .cartItems {
     width: 550px;
+}
+
+.cartItemFinal {
+    width: 200px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .countHandler input {
@@ -70,6 +78,11 @@
 
 .countHandler {
     width: 345px;
+    display: flex;
+    justify-content: space-between;
+}
+.countHandlerFinal {
+    width: auto;
     display: flex;
     justify-content: space-between;
 }
